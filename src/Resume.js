@@ -15,13 +15,15 @@ import Profile from './Profile';
 import { BrowserRouter as Router, useRoutes } from "react-router-dom";
 import NavBar from './NavBar';
 import ContactMe from './ContactMe';
+import ExperiencesTimeline from './TimeLineExperiences';
 
 
 function AppRoutes() {
   const routes = useRoutes(
     [
       {path:'/profile',element:<Profile/>},
-      {path:'/contactMe',element:<ContactMe/>}
+      {path:'/contactMe',element:<ContactMe/>},
+      {path:'/projects',element:<ExperiencesTimeline/>}
     ]
   )
   return routes;

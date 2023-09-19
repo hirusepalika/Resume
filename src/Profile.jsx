@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyledImage, StyledContainer, StyledText, StyledName} from './Profile.styled';
+import {StyledImage, StyledName} from './Profile.styled';
 import profileImage from './static/images/avatar/profile_image.jpeg';
 
 const Profile = () => {
