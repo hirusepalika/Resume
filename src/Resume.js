@@ -21,9 +21,11 @@ import ExperiencesTimeline from './TimeLineExperiences';
 function AppRoutes() {
   const routes = useRoutes(
     [
+      {path:'/',element:<Profile/>},
       {path:'/profile',element:<Profile/>},
       {path:'/contactMe',element:<ContactMe/>},
-      {path:'/projects',element:<ExperiencesTimeline/>}
+      {path:'/experiences',element:<ExperiencesTimeline/>},
+      {path:'/education',element:<ExperiencesTimeline/>}
     ]
   )
   return routes;
@@ -33,7 +35,7 @@ const Resume = () => {
   return (
     <>
         <Router>
-          <div style={{width: '100%', height: '100%', display: 'flex', flexDirection: 'column'}}>
+          <div style={{display: 'flex',  alignItems: 'center', justifyContent: 'center', flexDirection: 'column'}}>
             <NavBar/>
             <AppRoutes/>
           </div>  

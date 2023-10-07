@@ -5,12 +5,12 @@ const StyledNavBarButton = styled(Button)``;
 
 const StyledNavBar = styled.div`
     button {
-        color: #C4A484;
-        border-color: beige;
+        color: darkorange;
+        border-color: white;
         margin: 25px;
         border-block-width: initial;
+        box-shadow: 0px 0px 10px 2px orange;
     }
 `
-
 
 export {StyledNavBarButton, StyledNavBar};
