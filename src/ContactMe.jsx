@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import ContactMailIcon from '@mui/icons-material/ContactMail';
-import {StyledText, StyledLink, StyledContactTitle, StyledForm, StyledButton, StyledLoadingForm} from './ContactMe.styled';
+import {StyledContactTitle, StyledForm, StyledButton, StyledLoadingForm} from './ContactMe.styled';
 import MoodIcon from '@mui/icons-material/Mood';
-import { TextField, Button, Container, Stack, Skeleton } from '@mui/material';
+import { TextField, Stack, Skeleton } from '@mui/material';
 import emailjs from '@emailjs/browser';
 
 

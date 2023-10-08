@@ -1,29 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useNavigate } from "react-router-dom";
-import {StyledNavBarButton, StyledNavBar} from './Resume.styled';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import {StyledTabs} from './NavBar.styled';
+import {StyledBox, StyledTabs} from './NavBar.styled';
 
 const NavBar = () => {
 
     const history = useNavigate();
 
-    const handleClickProfile = () => {
-        history("/profile")
+    const handleClickHome = () => {
+        history("/home")
     }
 
     const handleClickEducation = () => {
@@ -44,20 +29,44 @@ const NavBar = () => {
         setValue(newValue);
     };
 
+    const [onMouseOver, setOnMouseOver] = useState({id: 0, setHover: false});
+
     return (
-        <Box sx={{ width: '100%', borderBottom: '1px', marginTop: '20px', marginLeft: '20px' }}>
+        <StyledBox id="tab" sx={{ width: '100%', borderBottom: '1px', marginTop: '20px', marginLeft: '20px' }}>
             <StyledTabs
                 value={value}
                 onChange={handleChange}
                 aria-label="wrapped label tabs example"
                 TabIndicatorProps={{style: {background:'darkorange'}}}
             >
-                <Tab style={{fontSize: '20px', color: 'darkorange'}} label="Profile" onClick={handleClickProfile}/>
-                <Tab style={{fontSize: '20px', color: 'darkorange'}} label="Experiences" onClick={handleClickExperiences}/>
-                <Tab style={{fontSize: '20px', color: 'darkorange'}} label="Contact me" onClick={handleClickContactMe}/>
+                <Tab 
+                    onMouseOver={() => setOnMouseOver({id: 1, setHover: true})} 
+                    onMouseOut={() => setOnMouseOver({id: 1, setHover: false})} 
+                    style={{fontSize: onMouseOver.id === 1 && onMouseOver.setHover ? '30px': '20px', color: 'darkorange'}}
+                    label="Home" 
+                    onClick={handleClickHome}
+                />
+                <Tab 
+                    onMouseOver={() => setOnMouseOver({id: 2, setHover: true})} 
+                    onMouseOut={() => setOnMouseOver({id: 2, setHover: false})} 
+                    style={{fontSize: onMouseOver.id === 2 &&  onMouseOver.setHover ? '30px': '20px', color: 'darkorange'}}
+                    label="Education" 
+                    onClick={handleClickEducation}
+                />
+                <Tab 
+                    onMouseOver={() => setOnMouseOver({id: 3, setHover: true})} 
+                    onMouseOut={() => setOnMouseOver({id: 3, setHover: false})} 
+                    style={{fontSize: onMouseOver.id === 3 && onMouseOver.setHover ? '30px': '20px', color: 'darkorange'}}
+                    label="Experiences" 
+                    onClick={handleClickExperiences}/>
+                <Tab 
+                    onMouseOver={() => setOnMouseOver({id: 4, setHover: true})} 
+                    onMouseOut={() => setOnMouseOver({id: 4, setHover: false})} 
+                    style={{fontSize: onMouseOver.id === 4 && onMouseOver.setHover ? '30px': '20px', color: 'darkorange'}}
+                    label="Contact me" 
+                    onClick={handleClickContactMe}/>
             </StyledTabs>
-        </Box>
-        //     <StyledNavBarButton variant="outlined" onClick={handleClickEducation}>Education</StyledNavBarButton>
+        </StyledBox>
     )
 }
 
