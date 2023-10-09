@@ -17,8 +17,8 @@ const Education = () => {
 
     return(
         <StyledDiv style={{display: 'flex', flexDirection: 'column', alignSelf: 'flex-start'}}>
-            <StyledSection id='section01' style={{display: 'flex', alignSelf: 'flex-start', marginLeft: '5%'}}>
-                <div style={{display: 'flex', alignSelf: 'flex-start', marginTop: '10%', marginLeft: '5%'}}>
+            <StyledSection id='section01' style={{display: 'flex', alignSelf: 'flex-start', marginLeft: '1%'}}>
+                <div style={{display: 'flex', alignSelf: 'flex-start', marginTop: '10%'}}>
                     <StyledImage src={georgetown} alt="georgetown-healy-hall" />
                     <div style={{display: 'flex', flexDirection: 'column', marginLeft: '20%'}}>
                         <StyledHeader>Georgetown University</StyledHeader>
@@ -31,8 +31,8 @@ const Education = () => {
                 </div>
             </StyledSection>
             <a id="scrollArrow" href="#section02" class="scroll-down-link scroll-down-arrow"  data-icon></a>
-            <StyledSection id="section02" style={{display: 'flex', alignSelf: 'flex-start', marginTop: '20%', marginLeft: '5%'}}>
-                <div style={{display: 'flex', alignSelf: 'flex-start', marginTop: '20%', marginLeft: '5%', marginBottom: '10%'}}>
+            <StyledSection id="section02" style={{display: 'flex', alignSelf: 'flex-start', marginTop: '20%', marginLeft: '1%'}}>
+                <div style={{display: 'flex', alignSelf: 'flex-start', marginTop: '20%', marginBottom: '10%'}}>
                     <StyledImage src={ncsu} alt="ncsu-sign" style={{height: '500px', width: '800px'}} />
                     <div style={{display: 'flex', flexDirection: 'column', marginLeft: '20%'}}>
                         <StyledHeader>North Carolina State University</StyledHeader>
