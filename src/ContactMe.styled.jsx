@@ -13,12 +13,12 @@ const StyledLink = styled.a`
 
 const StyledContactTitle = styled.h1`
     font-family: 'Montserrat', sans-serif;
-    color: #C4A484;
+    color: #413F3D;
     font-size: 40px;
 `;
 
 const StyledForm = styled.form`
-    background: #E9DAC4;
+    background: lightgrey;
     padding: 40px;
     border-radius: 1.5rem;
 
@@ -28,7 +28,7 @@ const StyledForm = styled.form`
 `;
 
 const StyledLoadingForm = styled.form`
-    background: #E9DAC4;
+    background: #B1A6A4;
     padding: 40px;
     border-radius: 1.5rem;
     height: 200px;
@@ -45,9 +45,7 @@ const StyledLoadingForm = styled.form`
 `;
 
 const StyledButton = styled(Button)`
-    margin-top: 20px;
-
-   
+    margin-top: 20px;  
 `;
 
 export {StyledText, StyledLink, StyledContactTitle, StyledForm, StyledButton, StyledLoadingForm};

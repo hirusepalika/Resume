@@ -15,7 +15,6 @@ const StyledBox = styled(Box)`
 `;
 
 const StyledTabs = styled(Tabs)`
-   
    button{
     font-family: 'Caveat';
     font-size: 25px;

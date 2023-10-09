@@ -95,8 +95,8 @@ const ContactMe = () => {
                 </StyledForm>
             }
             <div style={{display: 'flex', justifyContent: 'center', marginTop: '8%'}}>
-                <LinkedInIcon onClick={event =>  window.open('https://www.linkedin.com/in/hiruf/', "_blank")} style={{fontSize: '100px', color: 'chocolate', stroke: 'white'}}/>
-                <FacebookIcon onClick={event =>  window.open('https://www.facebook.com/hiru.sepalika', "_blank")} style={{fontSize: '100px', color: 'chocolate', stroke: 'white'}}/>
+                <LinkedInIcon onClick={event =>  window.open('https://www.linkedin.com/in/hiruf/', "_blank")} style={{fontSize: '100px', color: 'grey', stroke: 'white'}}/>
+                <FacebookIcon onClick={event =>  window.open('https://www.facebook.com/hiru.sepalika', "_blank")} style={{fontSize: '100px', color: 'grey', stroke: 'white'}}/>
             </div>
         </div>
     )

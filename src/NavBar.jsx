@@ -37,32 +37,32 @@ const NavBar = () => {
                 value={value}
                 onChange={handleChange}
                 aria-label="wrapped label tabs example"
-                TabIndicatorProps={{style: {background:'darkorange'}}}
+                TabIndicatorProps={{style: {background:'#413F3D'}}}
             >
                 <Tab 
                     onMouseOver={() => setOnMouseOver({id: 1, setHover: true})} 
                     onMouseOut={() => setOnMouseOver({id: 1, setHover: false})} 
-                    style={{fontSize: onMouseOver.id === 1 && onMouseOver.setHover ? '30px': '20px', color: 'darkorange'}}
+                    style={{fontSize: onMouseOver.id === 1 && onMouseOver.setHover ? '30px': '20px', color: '#413F3D'}}
                     label="Home" 
                     onClick={handleClickHome}
                 />
                 <Tab 
                     onMouseOver={() => setOnMouseOver({id: 2, setHover: true})} 
                     onMouseOut={() => setOnMouseOver({id: 2, setHover: false})} 
-                    style={{fontSize: onMouseOver.id === 2 &&  onMouseOver.setHover ? '30px': '20px', color: 'darkorange'}}
+                    style={{fontSize: onMouseOver.id === 2 &&  onMouseOver.setHover ? '30px': '20px', color: '#413F3D'}}
                     label="Education" 
                     onClick={handleClickEducation}
                 />
                 <Tab 
                     onMouseOver={() => setOnMouseOver({id: 3, setHover: true})} 
                     onMouseOut={() => setOnMouseOver({id: 3, setHover: false})} 
-                    style={{fontSize: onMouseOver.id === 3 && onMouseOver.setHover ? '30px': '20px', color: 'darkorange'}}
+                    style={{fontSize: onMouseOver.id === 3 && onMouseOver.setHover ? '30px': '20px', color: '#413F3D'}}
                     label="Experiences" 
                     onClick={handleClickExperiences}/>
                 <Tab 
                     onMouseOver={() => setOnMouseOver({id: 4, setHover: true})} 
                     onMouseOut={() => setOnMouseOver({id: 4, setHover: false})} 
-                    style={{fontSize: onMouseOver.id === 4 && onMouseOver.setHover ? '30px': '20px', color: 'darkorange'}}
+                    style={{fontSize: onMouseOver.id === 4 && onMouseOver.setHover ? '30px': '20px', color: '#413F3D'}}
                     label="Contact me" 
                     onClick={handleClickContactMe}/>
             </StyledTabs>

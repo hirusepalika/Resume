@@ -24,16 +24,17 @@ const StyledText = styled.h1`
 const StyledName = styled.h1`
     font-size: 35px;
     font-weight: 1;
-    color: bisque;
+    color: lightgray;
     font-family: 'Caveat', cursive;
     font-size: 60px;
 `;
 
 const StyledQuote = styled.h2`
-    font-family: 'Chakra Petch', sans-serif;
-    background: linear-gradient(to right, darkorange 50%, beige 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-family: 'Bebas Neue', sans-serif;
+    /* background: linear-gradient(to right, darkorange 50%, beige 50%); */
+    color: grey;
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
     font-size: 30px;
 `;
 
