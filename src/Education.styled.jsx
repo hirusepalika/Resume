@@ -51,7 +51,7 @@ const StyledDiv = styled.div`
     }
 
     #scrollArrow {
-        top: 80%;
+        top: 85%;
     }
 `
 
