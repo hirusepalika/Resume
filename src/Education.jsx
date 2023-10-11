@@ -9,7 +9,7 @@ const Education = () => {
     const myScrollFunc = () => {
         const arrow = document.getElementById("scrollArrow");
         var y = window.scrollY;
-        if (y >= 500) {
+        if (y >= 500 && arrow.classList) {
             arrow.classList.add("hide");
             setSectionTwoVisibility(true)
         } else {
