@@ -4,6 +4,7 @@ import NavBar from './NavBar';
 import ContactMe from './ContactMe';
 import ExperiencesTimeline from './TimeLineExperiences';
 import Education from './Education';
+import {StyledContainer} from './Resume.styled';
 
 
 function AppRoutes() {
@@ -21,14 +22,14 @@ function AppRoutes() {
 
 const Resume = () => {
   return (
-    <>
+    <StyledContainer>
         <Router>
-          <div style={{display: 'flex',  alignItems: 'center', justifyContent: 'center', flexDirection: 'column'}}>
+          <div className="innerDiv">
             <NavBar/>
             <AppRoutes/>
           </div>  
         </Router>
-    </>
+    </StyledContainer>
     
   );
 }

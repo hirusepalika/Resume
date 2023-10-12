@@ -32,7 +32,7 @@ const NavBar = () => {
     const [onMouseOver, setOnMouseOver] = useState({id: 0, setHover: false});
 
     return (
-        <StyledBox id="tab" sx={{ width: '100%', borderBottom: '1px', marginTop: '20px', marginLeft: '20px' }}>
+        <StyledBox id="tab" sx={{ width: '100%', borderBottom: '1px', marginTop: '20px', marginLeft: '20px', marginBottom: '100px' }}>
             <StyledTabs
                 value={value}
                 onChange={handleChange}

@@ -1,15 +1,12 @@
 import styled from 'styled-components';
 
 const StyledImage = styled.img`
-    border-radius: 50%;
     width: 500px;
     height: 500px;
     box-shadow: 1px 1px 10px 1px grey;
     background-position: center;
     background-size: auto 80px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 `;
 
 const StyledContainer = styled.div`

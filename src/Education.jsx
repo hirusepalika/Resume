@@ -20,9 +20,9 @@ const Education = () => {
     window.addEventListener("scroll", myScrollFunc);
 
     return(
-        <StyledDiv style={{display: 'flex', flexDirection: 'column', alignSelf: 'center'}}>
+        <StyledDiv style={{display: 'flex', flexDirection: 'column'}}>
             <StyledSection id='section01' style={{display: 'flex', alignSelf: 'flex-start', marginLeft: '1%'}}>
-                <div style={{display: 'flex', alignSelf: 'flex-start', marginTop: '10%'}}>
+                <div style={{display: 'flex', alignSelf: 'flex-start'}}>
                     <StyledImage src={georgetown} alt="georgetown-healy-hall" />
                     <div style={{display: 'flex', flexDirection: 'column', marginLeft: '20%'}}>
                         <StyledHeader>Georgetown University</StyledHeader>
@@ -31,12 +31,11 @@ const Education = () => {
                         <StyledBody>Technology Management with a concentration in Business Intelligence</StyledBody>
                     
                     </div>
-                    <br/>
                 </div>
             </StyledSection>
             <a id="scrollArrow" href="#section02" class="scroll-down-link scroll-down-arrow"  data-icon></a>
             <Fade in={sectionTwoVisibility}>
-                <StyledSection id="section02" style={{display: 'flex', alignSelf: 'flex-start', marginTop: '10%', marginLeft: '1%'}}>
+                <StyledSection id="section02" style={{display: 'flex', alignSelf: 'flex-start', marginLeft: '1%'}}>
                     <div style={{display: 'flex', alignSelf: 'flex-start', marginTop: '20%', marginBottom: '10%'}}>
                         <StyledImage src={ncsu} alt="ncsu-sign" style={{height: '500px', width: '800px'}} />
                         <div style={{display: 'flex', flexDirection: 'column', marginLeft: '20%'}}>
@@ -44,7 +43,6 @@ const Education = () => {
                             <StyledDate>Aug 2015 - May 2019</StyledDate>
                             <StyledBody>Computer Science and Mathematics</StyledBody>
                         </div>
-                        <br/>
                     </div>
                 </StyledSection>
             </Fade>

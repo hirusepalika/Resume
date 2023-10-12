@@ -13,4 +13,25 @@ const StyledNavBar = styled.div`
     }
 `
 
-export {StyledNavBarButton, StyledNavBar};
+const StyledContainer = styled.div`
+    max-width: 1680px;
+
+    .innerDiv {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* max-height: 1200px; */
+        align-content: center;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1680px) {
+    .innerDiv {
+            flex-direction: row;
+        }
+    }
+`;
+
+
+export {StyledNavBarButton, StyledNavBar, StyledContainer};
