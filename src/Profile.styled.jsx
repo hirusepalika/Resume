@@ -27,12 +27,12 @@ const StyledName = styled.h1`
 `;
 
 const StyledQuote = styled.h2`
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: Raleway, sans-serif;
     /* background: linear-gradient(to right, darkorange 50%, beige 50%); */
     color: grey;
     /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
-    font-size: 30px;
+    font-size: 25px;
 `;
 
 export {StyledImage, StyledContainer, StyledText, StyledName, StyledQuote};
