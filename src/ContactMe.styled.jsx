@@ -15,6 +15,8 @@ const StyledContactTitle = styled.h1`
     font-family: 'Montserrat', sans-serif;
     color: #413F3D;
     font-size: 40px;
+    background-color: #FFFF00;
+    width: fit-content;
 `;
 
 const StyledForm = styled.form`

@@ -41,7 +41,7 @@ const ContactMe = () => {
     };
 
     return (
-        <div style={{width: '50%'}}>
+        <div style={{width: '50%', marginLeft: '25%'}}>
             <StyledContactTitle>Let's get in touch <MoodIcon/> </StyledContactTitle>
             {
                 loading ?

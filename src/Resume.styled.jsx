@@ -23,7 +23,7 @@ const StyledContainer = styled.div`
         /* max-height: 1200px; */
         align-content: center;
         max-width: 100%;
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     @media screen and (min-width: 1680px) {

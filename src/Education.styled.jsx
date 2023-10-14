@@ -60,6 +60,7 @@ const StyledHeader = styled.h2`
     font-family: 'Bebas Neue', sans-serif;
     font-size: 60px;
     margin-top: inherit;
+    background-color: #FFFF00;
 `;
 
 const StyledDate = styled.h3`

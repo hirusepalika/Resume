@@ -29,13 +29,12 @@ const StyledContainer = styled.div`
     }
 
     .scroll-down-arrow {
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABsElEQVR4nO3czWrbQBRA4ZO/JwkJpZtALsF55mYRShfuKn2b7BIPgbS0FBwC8sbUdSWb+s7M+WB25iLm6AcEMkiSJEmSJEmSJEmSJEmSJI7cg52cASfswRXwFfgB/AS+AB/2MbgTH4E58Bv4BXwDbnaJ8QIs19YCmO33uJs0G/Zqff9egZgycP6HYatVjLI1RvnL/j0w0vFwm9o00CjTYyyH29cpI33fMtQo02Ish+fxaPf/MNgo42O8r89McL7hoWSU3WIshr2d5Bp4GhHllv4E8Pw/T1yjJIqxYpREMVaMkijGilHIE8Mo5IvRc5TIGqPHKJE9Rk9RopYYPUSJ2mK0HCVqjdFilKg9RktRopUYLUSJ1mLUHCVajVFjlGg9Rk1RopcYNUSJ3mJkjhK9xsgYJXqPkSlKGCNPlDBGnihhjDxRwhh5ooQx8kQJY+SJEsbIEyWMkSdKGCNPlDBGnihhjDzfXJSRv2323VSmK2VpjLqiFK+MPFGKMfJEKcbIE6UYI0+UYow8UYox8vy5y8IYh3MJ3AGPw/oEXBzweCRJkiRJkiRJkiRJkiRJkqjHGybssuE5Q47nAAAAAElFTkSuQmCC);
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .scroll-down-link {
-        /* position: absolute; */
+        color: black;
         margin-left: 100px;
         position: relative;
         z-index: 100;
@@ -44,7 +43,7 @@ const StyledContainer = styled.div`
         width: 100px;
         margin: 0px 0px 0px -50px;
         line-height: 60px;
-        left: 30%;
+        left: 50px;
         bottom: 10px;
         text-align: center;
         font-size: 70px;
@@ -79,12 +78,46 @@ const StyledContainer = styled.div`
         opacity:0;
         display: none;
     }
+
+    .icon-style{
+        /* background-color: #551B54; */
+        /* border: 2px solid #fff;
+        border-radius: 50%; */
+        /* border: 2px solid #fff; */
+        height: 60px;
+        width: 60px;
+        color: black;
+        cursor: pointer;
+        animation: movebtn 5s ease-in-out infinite;
+        transition: all .5s ease-in-out;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    @keyframes movebtn {
+        0%{
+            transform: translateY(0px);
+        }
+        25%{
+            transform: translateY(20px);
+        }
+        50%{
+            transform: translateY(0px);
+        }
+        75%{
+            transform: translateY(-20px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
 `
 const StyledTitle = styled.h1`
     font-size: 35px;
     font-weight: 1;
     color: #56514F;
-    font-family: 'Caveat', cursive;
+    font-family: Raleway, sans-serif;
     width: 500px;
     word-wrap: break-word;
     word-break: break-word;
@@ -94,6 +127,7 @@ const StyledHeader = styled.h1`
     font-weight: 1;
     color: #413F3D;
     font-family: 'Caveat', cursive;
+    background-color: #FFFF00;
 `
 
 const StyledImage = styled.img`
